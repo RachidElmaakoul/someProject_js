@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f1f2ff;
+        }
+        .form,
+        .tasks {
+            margin: 20px 0;
+            padding: 30px 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+        }
+        #text {
+            padding: 20px;
+            width: 300px;
+            border-radius: 15px;
+            outline: none;
+            border:  1px solid #eee;
+        }
+        input[type="submit"] {
+            color: #fff;
+            padding: 20px ;
+            border-radius: 15px;
+            outline: none;
+            border: 1px solid #eee;
+            background-color: orangered;
+        }
+        .tasks {
+            width: 440px;
+        }
+        .divTask {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 10px 15px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .done {
+            opacity: .5;
+        }
+        span.del {
+            background-color: orangered;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="form">
+        <input type="text" name="" id="text">
+        <input id="submit" type="submit" value="Add task">
+    </div>
+    <div class="tasks"></div>
+    <script src="main.js"></script>
+</body>
+</html>
