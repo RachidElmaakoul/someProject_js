@@ -1,0 +1,46 @@
+
+body {
+    width: 95%;
+      display: flex;
+      flex-direction: column;
+    justify-content: center;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 20px;
+    background-color: #c8cfc8;
+    width: 500px;
+    margin: 30px auto;
+    justify-content: center;
+}
+ul li {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    opacity: .5;
+    transition: .2s ;
+}
+
+li[data-color='green'] {
+    background-color: green;
+}
+li[data-color='blue'] {
+    background-color: blue;
+}
+li[data-color='black'] {
+    background-color:black;
+}
+li[data-color='red'] {
+    background-color: red;
+}
+li:hover,
+li.active {
+    opacity: 1;
+}
+div.expriment {
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    background-color: #ca0a77;
+}
